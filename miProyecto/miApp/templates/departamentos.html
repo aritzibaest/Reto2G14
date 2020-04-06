@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block contenido %}
+         <ul>
+            {% for dep in lista_departamentos %}
+            <li>
+                {{ dep.id }} : {{ dep.nombre }} {<a href="departamento/{{dep.id}}">Ver</a>}
+            </li>
+            {% endfor %}
+        </ul>
+{% endblock %}
+
+
